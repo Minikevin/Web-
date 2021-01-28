@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    
+    .box{
+      width: 500px;
+      height: 100px;
+      background-color: aqua;
+      /* 给块级元素 本身添加 水平居中 */
+      margin: 0 auto;
+
+
+      /* 设置子元素 水平居中 */
+      text-align: center;
+    }
+    span{
+      background-color: yellow;
+      /* 
+      行内元素 
+      1 添加margin 无效果
+
+      2 水平居中
+        1 给它的父元素设置代码才行   text-align: center;
+        
+      */
+    
+      margin: 0 auto;
+    }
+
+    a{
+      /* 
+      行内块元素 水平居中
+      1 和行内元素一样 给父元素 设置 这行代码才行  text-align: center;
+       */
+      display: inline-block;
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span>span</span>
+    <a href="#">a标签-行内块</a>
+  </div>
+</body>
+</html>
