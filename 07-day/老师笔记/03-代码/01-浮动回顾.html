@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: aqua;
+    }
+
+    .left {
+      width: 200px;
+      height: 200px;
+      background-color: lawngreen;
+      float: left;
+    }
+
+    .right {
+      width: 200px;
+      height: 200px;
+      background-color: rosybrown;
+      float: right;
+    }
+
+    .clearfix {
+      zoom: 1;
+    }
+
+    .clearfix:after {
+      display: block;
+      clear: both;
+      visibility: hidden;
+      height: 0;
+      content: '';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <h2>页面的导航</h2>
+</body>
+
+</html>

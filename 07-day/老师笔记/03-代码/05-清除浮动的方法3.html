@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单伪元素</title>
+  <style>
+    .box{
+      background-color: aqua;
+    }
+    .left,.right{
+      width: 100px;
+      height: 100px;
+      float: left;
+      background-color: lawngreen;
+    }
+    .right{
+      background-color: royalblue;
+    }
+
+    .clearfix {
+      zoom: 1;
+    }
+
+    .clearfix:after {
+      display: block;
+      clear: both;
+      visibility: hidden;
+      height: 0;
+      content: '';
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: table;
+    }
+
+    .clearfix::after {
+      clear: both;
+    }
+    .box{
+      width: 1000px;
+
+      background-color: yellow;
+      margin: 0 auto;
+    }
+
+    /* 左侧 */
+    .aside{
+      float: left;
+      width: 200px;
+      background-color: aqua;
+      height: 500px;
+    }
+    /* 右侧 */
+    .main{
+      float: left;
+      width: 800px;
+   
+      height: 500px;
+      background-color: purple;
+    }
+    .item{
+      width:190px;
+      height: 245px;
+      float: left;
+      background-color: pink;
+      margin-left: 10px;
+    }
+
+    /* 选择中了 前四个 */
+    .item_lt4{
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box clearfix">
+    <!-- 左侧 -->
+    <div class="aside">1</div>
+    <!-- 右侧 -->
+    <div class="main clearfix">
+      <div class="item item_lt4">1</div>
+      <div class="item item_lt4">2</div>
+      <div class="item item_lt4">3</div>
+      <div class="item item_lt4">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+    </div>
+  </div>
+</body>
+</html>

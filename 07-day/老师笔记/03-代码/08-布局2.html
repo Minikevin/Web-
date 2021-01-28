@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+      height: 100px;
+      background-color: green;
+    }
+    .footer{
+      height: 200px;
+      background-color: palegreen;
+    }
+    .main{
+      width: 1000px;
+ 
+      /* background-color: aqua; */
+      margin: 10px auto;
+    }
+    .row1{
+      background-color: yellow;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+    .row2{
+      background-color: sandybrown;
+    }
+    .item{
+      width: 242.5px;
+      height: 300px;
+      background-color: sienna;
+      float: left;
+    }
+    .item_lt3{
+      margin-right: 10px;
+    }
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: table;
+    }
+
+    .clearfix::after {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"></div>
+  <div class="main">
+    <div class="row1">1</div>
+    <div class="row2 clearfix">
+      <div class="item item_lt3">1</div>
+      <div class="item item_lt3 ">2</div>
+      <div class="item item_lt3 ">3</div>
+      <div class="item" >4</div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</body>
+</html>

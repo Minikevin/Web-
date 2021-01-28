@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 1 Normalize.css 让不同的浏览器 在显示标签的时候 保证外观一致 -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 2  网站的公共的样式  -->
+  <link rel="stylesheet" href="./css/common.css">
+  <!-- 3 当前页面自己独有的样式文件 -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <!-- 1 头部 start -->
+  <div class="header">
+    <!-- 1200px 版心 -->
+    <div class="main">
+      <!-- logo -->
+      <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+      <!-- 导航 -->
+      <div class="nav clearfix ">
+        <a href="#" class="nav_item active">首页</a>
+        <a href="#" class="nav_item">课程</a>
+        <a href="#" class="nav_item">职业规划</a>
+      </div>
+      <input type="text" placeholder="输入关键词" />
+      <div class="user">
+        <img src="./images/user.png">
+      </div>
+
+      <div class="nick_name">
+        qq-leishui</div>
+    </div>
+  </div>
+  <!-- 1 头部 end -->
+
+  <!-- 2 轮播图 start -->
+  <div class="banner">
+    <div class="main">
+      <!-- 左侧菜单 -->
+      <ul class="menu">
+        <!-- (li>a[href=#]>span{前端开发}+i{>})*9 -->
+        <li><a href="#" class="active"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+        <li><a href="#"><span>前端开发</span><i>></i></a></li>
+      </ul>
+      <!-- 右侧课程 -->
+      <dl class="mine_course">
+        <dt>我的课程表</dt>
+        <dd class="item"><a href="#">
+            <div class="continue">继续学习 程序语言设计</div>
+            <div class="studying">正在学习-使用对象</div>
+          </a></dd>
+        <dd class="item"><a href="#">
+            <div class="continue">继续学习 程序语言设计</div>
+            <div class="studying">正在学习-使用对象</div>
+          </a></dd>
+        <dd class="item"><a href="#">
+            <div class="continue">继续学习 程序语言设计</div>
+            <div class="studying">正在学习-使用对象</div>
+          </a></dd>
+        <dd class="all">
+          <a href="#" id="">全部课程</a>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <!-- 2 轮播图 end -->
+
+  <!-- 3 菜单 start -->
+  <div class="recommend main">
+    <div class="recommend_content">
+      <a class="active" href="#">精品推荐</a>
+      <a href="#">JQuery</a>
+      <a href="#">Spark</a>
+      <a href="#">MySQL</a>
+      <a href="#">JavaWeb</a>
+      <a href="#">MySQL</a>
+      <a class="last" href="#">JavaWeb</a>
+    </div>
+    <a href="#" class="recommend_interest">修改兴趣</a>
+  </div>
+  <!-- 4 推荐 start -->
+  <dl class="recommend_list main">
+    <dt class="clearfix">
+      <span class="title">精品推荐</span>
+      <span class="all">查看全部</span>
+    </dt>
+    <dd class="clearfix">
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a class="mr0" href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a class="mr0" href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+    </dd>
+  </dl>
+  <!-- 4 推荐 end -->
+
+  <!-- 编程入门 -->
+  <div class="code main">
+    <div class="code_title">
+      <span class="title">
+        <h2>编程入门</h2>
+      </span>
+      <div class="code_nav">
+        <a href="#" class="active">热门</a>
+        <a href="#">初级</a>
+        <a href="#">中级</a>
+        <a href="#">高级</a>
+      </div>
+      <a href="#" class="all">查看全部</a>
+    </div>
+    <div class="code_content clearfix">
+      <a href="#" class="code_adv">
+        <img src="./uploads/basic-pic.jpg" alt="">
+      </a>
+      <div class="code_view">
+        <a href="#" class="banner_adv">
+          <img src="./uploads/basic-banner.png" alt="">
+        </a>
+        <div class="code_list clearfix">
+          <a href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+          <a class="mr0" href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="code main">
+    <div class="code_title">
+      <span class="title">
+        <h2>编程入门</h2>
+      </span>
+      <div class="code_nav">
+        <a href="#" class="active">热门</a>
+        <a href="#">初级</a>
+        <a href="#">中级</a>
+        <a href="#">高级</a>
+      </div>
+      <a href="#" class="all">查看全部</a>
+    </div>
+    <div class="code_content clearfix">
+      <a href="#" class="code_adv">
+        <img src="./uploads/basic-pic.jpg" alt="">
+      </a>
+      <div class="code_view">
+        <a href="#" class="banner_adv">
+          <img src="./uploads/basic-banner.png" alt="">
+        </a>
+        <div class="code_list clearfix">
+          <a href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+          <a class="mr0" href="#">
+            <img src="./uploads/course01.png" alt="">
+            <div class="content">
+              <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+              <div class="count">
+                <span>高级</span>
+                • 1125人在学
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 4 推荐 start -->
+  <dl class="recommend_list main">
+    <dt class="clearfix">
+      <span class="title">
+        <h2>数据分析师</h2>
+      </span>
+      <span class="all">查看全部</span>
+    </dt>
+    <dd class="clearfix">
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <img src="./images/Snipaste_2021-01-26_11-06-33.png"  alt="" style="position: absolute;">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+      <a class="mr0" href="#">
+        <img src="./uploads/course01.png" alt="">
+        <div class="content">
+          <div class="name">Think PHP 5.0 博客系统实战项目演练</div>
+          <div class="count">
+            <span>高级</span>
+            • 1125人在学
+          </div>
+        </div>
+      </a>
+    </dd>
+  </dl>
+
+
+  <!-- 页脚 -->
+  <div class="footer">
+    <div class="content">
+      <div class="copyright">
+        <img src="./images/logo.png" alt="">
+        <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br>
+          @ 2017年XTCG Inc.保留所有权利。 -泸ICP备15025210号
+          <a href="#" class="app">下载app</a>
+        </p>
+      </div>
+      <div class="links">
+        <dl>
+          <dt>关于学成网</dt>
+          <dd><a href="#">关于</a></dd>
+          <dd><a href="#">管理团队</a></dd>
+          <dd><a href="#">工作机会</a></dd>
+          <dd><a href="#">客户服务</a></dd>
+          <dd><a href="#">帮助</a></dd>
+        </dl>
+        <dl>
+          <dt>关于学成网</dt>
+          <dd><a href="#">关于</a></dd>
+          <dd><a href="#">管理团队</a></dd>
+          <dd><a href="#">工作机会</a></dd>
+          <dd><a href="#">客户服务</a></dd>
+          <dd><a href="#">帮助</a></dd>
+        </dl>
+        <dl>
+          <dt>关于学成网</dt>
+          <dd><a href="#">关于</a></dd>
+          <dd><a href="#">管理团队</a></dd>
+          <dd><a href="#">工作机会</a></dd>
+          <dd><a href="#">客户服务</a></dd>
+          <dd><a href="#">帮助</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

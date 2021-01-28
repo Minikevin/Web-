@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>双伪元素</title>
+  <style>
+    .box {
+      background-color: aqua;
+    }
+
+    .left,
+    .right {
+      width: 100px;
+      height: 100px;
+      float: left;
+      background-color: lawngreen;
+    }
+
+    .right {
+      background-color: royalblue;
+    }
+
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: table;
+    }
+
+    .clearfix::after {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+
+</html>
